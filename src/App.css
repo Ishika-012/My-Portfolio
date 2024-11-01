@@ -1,0 +1,363 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* nav list styling */
+
+a{
+  text-decoration: none;
+  color:white
+}
+a:hover{
+  color:lightblue
+}
+.navList{
+  color:white;
+  text-align: end;
+  margin-right:2rem;
+ transform: translateY(50%);
+ list-style-type: none;
+}
+.navList li{
+  margin-bottom: 3rem;
+}
+.navList li:hover{
+   color: lightblue;
+}
+
+/* homepage styling */
+#home{
+  background: conic-gradient(from 200deg,  #2e1065 50% , rgb(42, 43, 43) 0% );
+}
+.homePage{
+ display:grid;
+ grid-template-columns: 40% 40% auto;
+
+}
+#profile{
+  margin-top:50%;
+  transform: translateY(-40%);
+  margin-left:2rem;
+  width:450px;
+}
+.name{
+  transform: translateY(20%);
+  color:violet;
+  
+}
+.name h1{
+  font-size: 50pt;
+}
+.name h3{
+  margin-top:1rem;
+  font-size: 28pt;
+  color:lavender
+}
+.name p{
+  color:white;
+  margin-top:1.5rem;
+  font-size: 14pt;
+}
+#icon{
+  transform: translateX(50%);
+  color:white;
+  position:relative;
+  bottom:12rem;
+  font-size: 24pt;
+  cursor: pointer;
+}
+
+/* about page styling */
+.about{
+  color:white;
+  height:100vh; 
+padding-top:4rem;
+}
+.about h1 , #project, #connect{
+  color:violet;
+  font-size: 30pt;
+  margin-bottom:2rem;
+  background-color: lavender;
+  width:fit-content;
+  padding:10px;
+  border-radius: 1rem;
+  margin-left:50%;
+  transform: translateX(-50%);
+}
+.about p{
+  font-size: 16pt;
+  margin:0 15% 2rem 15%;
+  text-align: justify;
+}
+.about h3{
+  margin-left:15%;
+  font-size: 22pt;
+  margin-bottom:1rem;
+  color: rgb(243, 179, 243)
+}
+#eduData{
+  margin-left:15%;
+  font-size:16pt ; 
+}
+#resume{
+  text-decoration: none;
+  color:white
+}
+#resume:hover{
+  text-decoration: underline;
+}
+
+/* skills page */
+
+#skills{
+  padding-top:2rem;
+  margin-bottom:3rem;
+}
+#skillChart{
+  width:500px;
+  text-align: center;
+position:relative;
+left:50%;
+transform: translateX(-50%);
+margin-bottom:5rem;
+
+
+
+
+}
+#skillChart h2{
+  font-size: 30pt;
+  color:violet;
+  background-color: lavender;
+  padding:10px;
+  margin-bottom:2rem;
+  
+}
+
+/* project */
+#projecthub{
+  padding-top:4rem;
+}
+#input{
+  margin-top:5rem;
+  color:white;
+  width:50%;
+  margin-left:24%;
+  background-color: black;
+  padding:2rem;
+  margin-bottom:2rem;
+  box-shadow: 1px 1px 10px rgb(156, 93, 156);
+}
+
+#name{
+  font-size: 20pt;
+  margin-bottom: 1rem;
+  color:rgb(193, 193, 241);
+}
+
+#input ul li{
+  font-size: 14pt;
+  margin-bottom:2rem;
+}
+
+#tech{
+  font-size: 14pt;
+}
+
+/* //contact */
+
+#connect{
+  margin-top:5rem
+}
+#list{
+  margin-left:37%;
+  margin-top:5rem;
+  margin-bottom: 5rem;
+}
+
+#list li{
+  font-size:18pt;
+  cursor:pointer;
+}
+
+
+
+/* ui experience */
+@media screen and (max-width:1200px){
+  .homePage{
+    grid-template-columns: auto;
+  }
+  #profile{
+    margin-top:5%;
+  width:450px;
+ 
+  transform: translateX(50%);
+  }
+  .name h1{
+    font-size: 50pt;
+    text-align: center;
+  }
+  .name h3{
+    margin-top:1rem;
+    font-size: 28pt;
+    color:lavender;
+    text-align: center;
+  }
+  .name p{
+    color:white;
+    margin-top:1.5rem;
+    font-size: 20pt;
+    margin-left:20%;
+    margin-right:20%;
+  }
+  .navList{
+   position:relative;
+   bottom:200%;
+  }
+  .about h1{
+    font-size:50pt
+  }
+  .about p{
+    font-size: 22pt;
+  }
+  .about h3{
+    font-size: 40pt;
+  }
+  #eduData{
+    font-size: 22pt;
+  }
+  #cv{
+    font-size: 30pt;
+    margin-top:10px;
+  }
+}
+
+@media screen and (max-width:800px){
+  #profile{
+    transform: translateX(30%);
+  }
+}
+
+@media screen and (max-width:700px){
+  #profile{
+    transform: translateX(30%);
+    width:350px;
+  }
+}
+
+@media screen and (min-width:1500px){
+  #portfolio{
+    width:600px;
+  }
+  .name h1{
+    font-size: 60pt;
+    text-align: center;
+  }
+  .name h3{
+    margin-top:1rem;
+    font-size: 40pt;
+    color:lavender;
+    text-align: center;
+  }
+  .name p{
+    color:white;
+    margin-top:1.5rem;
+    font-size: 25pt;
+    text-align: justify;
+    margin-left:20%;
+    margin-right:20%;
+  }
+  .navList{
+    position: relative;
+    top:30%;
+   
+  }
+  #icon{
+  
+    position:relative;
+    top:5rem;
+    bottom:0rem;
+    font-size: 30pt;
+
+  }
+  .about h1{
+    font-size: 50pt;
+  }
+  .about p{
+    font-size: 30pt;
+    margin-top:1rem;
+  }
+  .about h3{
+    
+    font-size: 40pt;
+
+  }
+  #eduData{
+    margin-left:15%;
+    font-size:28pt ; 
+  }
+  #cv{
+    font-size: 30pt;
+    margin-top: 10px;
+  }
+  
+  #skills{
+    padding-top:1rem;
+    margin-bottom:3rem;
+  }
+  #skillChart{
+    width:1000px;
+    text-align: center;
+  position:relative;
+  left:50%;
+  transform: translateX(-50%);
+  margin-bottom:5rem;
+  
+
+  
+  }
+  #skillChart h2{
+    font-size: 50pt;
+  
+  }
+  
+}
